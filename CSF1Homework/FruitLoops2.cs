@@ -11,12 +11,14 @@ namespace CSF1Homework
         static void Main()
         {
             string[] fruit = { "apple", "banana", "orange", "kiwi", "melon", "grapefruit" };
+            
             string[] period = { ".", "..", "...", "....", ".....", "......" };
             for (int i = 0; i < fruit.Length; i++)
             {
                 
                 Console.WriteLine(fruit[i]);
                 Console.WriteLine(period[i]);
+               
                     
                     
                     
