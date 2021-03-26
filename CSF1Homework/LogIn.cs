@@ -8,9 +8,9 @@ namespace CSF1Homework
 {
     class LogIn
     {
-        static void Main()
+        public void Main()
         {
-            bool isAdmin = false;
+            
             int attempts = 1;
             string admin = "TAYLOR GRIFFIN";
             Console.Write("Enter you username: ");
@@ -26,16 +26,16 @@ namespace CSF1Homework
 
 
 
-            if (userName != admin && attempts < 3)
+            if (userName != admin)
             {
                 do 
                 {
                     Console.WriteLine("Incorrect Username");
-                    Console.WriteLine("Try Again");
+                    Console.Write("Try Again: ");
                     userName = Console.ReadLine().ToUpper();
                     attempts++;
 
-                    if (!isAdmin && attempts == 3)
+                    if (attempts == 3 && userName!= admin)
                     {
                         Console.WriteLine("You have exceeded the maximum number of attempts.");
                         Console.WriteLine("Your access has been denied");
@@ -49,23 +49,23 @@ namespace CSF1Homework
             if (userName == admin)
             {
 
-                bool isPassword = false;
+               
                 string adminPassword = "ALFREDO";
                 int tries = 1;
                 Console.Write("Enter your password: ");
                 string password = Console.ReadLine().ToUpper();
 
-                while (password != adminPassword && tries < 3)
+                while (password != adminPassword && tries < 4)
                 {
 
 
                     Console.WriteLine("Incorrect Password");
-                    Console.WriteLine("Try Again");
+                    Console.Write("Try Again: ");
                     password = Console.ReadLine().ToUpper();
                     tries++;
 
 
-                    if (!isPassword && tries == 3)
+                    if (tries == 3 && password!=adminPassword)
                     {
                         Console.WriteLine("You have exceeded the maximum number of attempts.");
                         Console.WriteLine("Your access has been denied");

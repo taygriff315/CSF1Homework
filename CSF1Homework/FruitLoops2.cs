@@ -8,7 +8,7 @@ namespace CSF1Homework
 {
     class FruitLoops2
     {
-        static void Main()
+        public void Main()
         {
             string[] fruit = { "apple", "banana", "orange", "kiwi", "melon", "grapefruit" };
             

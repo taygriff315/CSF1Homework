@@ -8,7 +8,7 @@ namespace CSF1Homework
 {
     class MadLib
     {
-        static void Main()
+        public void Main()
         {
             Console.WriteLine("Please, enter a noun");
             string noun = Console.ReadLine();

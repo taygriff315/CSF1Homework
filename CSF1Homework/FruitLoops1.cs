@@ -8,7 +8,7 @@ namespace CSF1Homework
 {
     class FruitLoops1
     {
-        static void Main(string[] args)
+        public void Main()
         {
             Console.WriteLine("fruity loops");
             string[] fruit = { "apple", "banana", "orange", "kiwi", "melon", "grapefruit" };
@@ -22,3 +22,7 @@ namespace CSF1Homework
         }
     }
 }
+
+
+
+//string[] args

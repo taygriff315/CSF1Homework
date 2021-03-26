@@ -8,7 +8,7 @@ namespace CSF1Homework
 {
     class TemperatureConverter
     {
-        static void Main()
+        public void Main()
         {
             bool repeat = true;
 
